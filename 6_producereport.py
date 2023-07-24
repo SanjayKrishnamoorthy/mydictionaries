@@ -207,3 +207,9 @@ ProduceDictionary={
     }
 }
 
+calculated_total = ProduceDictionary(['cost']*['amt_sold'])
+
+if calculated_total != ProduceDictionary(['total']):
+    print('Calculated Total:',calculated_total)
+    print('Stated Total', ProduceDictionary(['total']))
+
