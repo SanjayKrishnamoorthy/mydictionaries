@@ -17,3 +17,14 @@ Display report for all universities that have a total price for in-state student
 
 
 """
+
+import json
+
+infile = ("school_data.json", 'r')
+
+schools = json.load(infile)
+
+print(type(schools))
+
+conference_schools = [372,108,107,130]
+
